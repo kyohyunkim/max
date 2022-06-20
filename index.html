@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="css/index.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="body_wrap">
@@ -15,13 +15,7 @@
                 <li class="burger">
                     <div class="line"><img src="img/burger1.svg" id="line"></div>
                     <div class="ball"><img src="img/burger2.svg" id="ball"></div>
-                    <div class="nav" id="nav">
-                        <ul>
-                            <li>About us</li>
-                            <li>Photo</li>
-                            <li>Video</li>
-                        </ul>
-                    </div>
+                    
                 </li>
 
                 <li class="logo"><img src="/img/max_logo_blk.svg" id="logo"></li>
@@ -30,10 +24,38 @@
                     <img src="img/back.svg" id="back">
                 </li>
             </ul>
+            <ul class="fix_menu">
+                <li>About us</li>
+                <li>&#124;</li>
+                <li>Photo</li>
+                <li>&#124;</li>
+                <li>Video</li>
+            </ul>
         </header>
-        <main></main>
+
+        <div class="nav" id="nav">
+            <ul>
+                <li>About us</li>
+                <li>Photo</li>
+                <li>Video</li>
+            </ul>
+        </div>
+
+        <main>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide img1"></div>
+                    <div class="swiper-slide img2"></div>
+                    <div class="swiper-slide img3"></div>
+                </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+              </div>
+        </main>
         <footer></footer>
     </div>
     <script defer src="./js/index.js"></script>
+    <script defer src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
