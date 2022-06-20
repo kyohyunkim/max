@@ -165,6 +165,7 @@ header .wrap .back {
   padding: 0 20px;
   text-align: center;
   text-transform: uppercase;
+  font-size: 15px;
 }
 
 .fix_menu li:nth-of-type(1) {
@@ -184,7 +185,7 @@ main {
 main .swiper {
   padding-top: 80px;
   width: 100%;
-  height: calc(50vh);
+  height: calc(70vh);
 }
 
 main .swiper-slide {
