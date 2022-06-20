@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
+body{max-width:475px;width:100%;margin:0 auto;text-align: center;position:relative;background-color: #ddd;}
+*{
+    margin:0;padding:0;text-decoration: none;list-style: none;
+    font-family: 'Montserrat','Noto Sans KR', sans-serif;
+}
+img{width:100%;}
+.body_wrap{overflow-x:hidden ;position: relative;z-index: 99;}
+header{
+    z-index: 999;
+    max-width: 475px;
+    width:100%;
+    position:fixed;
+    top:0;left:50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid #000;
+    height:50px;
+    .wrap{
+        display: flex;justify-content:space-between;align-items:center;
+        height: 50px;
+        padding: 0 20px;
+        .burger{
+            position: relative;
+            height:50px;
+            cursor: pointer;
+            img{position: absolute;width:40px;top:50%;left:0;transform:translateY(-50%);}
+            .nav{
+                position:absolute;background:#3a3e46;
+                border-top:1px solid #000;
+                border-right:1px solid #000;
+                height: 100vh;width: 30vw; left:-20px;
+                z-index:0;transition:.5s;
+                opacity: 0; padding:40px 20px 20px;
+                text-align:left;top:50px;
+                &.active{opacity: 1;}
+                li{font-size: 25px;color:#fff;padding:0 0 20px;}
+            }
+           
+            .line{
+                img{
+                    z-index:3;transition:.5s;transform-origin:center center;
+                    &.active{transform:translateY(-50%) rotate(-90deg);}
+                }
+            }
+            .ball{
+                img{
+                    z-index: 2;
+                    opacity: 0;
+                    transition:.5s;transform-origin:center center;
+                    &.active{transform:translateY(-50%) rotate(-90deg);opacity:1;}
+                }
+            }
+        }
+        .logo{width:30px;}
+        .back{width:40px;}
+    }
+}
+main{
+    background: #fff;
+    height: 100vh;
+}

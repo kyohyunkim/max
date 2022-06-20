@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap");
+body {
+  max-width: 475px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  background-color: #ddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Montserrat','Noto Sans KR', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.body_wrap {
+  overflow-x: hidden;
+  position: relative;
+  z-index: 99;
+}
+
+header {
+  z-index: 999;
+  max-width: 475px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom: 1px solid #000;
+  height: 50px;
+}
+
+header .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 0 20px;
+}
+
+header .wrap .burger {
+  position: relative;
+  height: 50px;
+  cursor: pointer;
+}
+
+header .wrap .burger img {
+  position: absolute;
+  width: 40px;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+header .wrap .burger .nav {
+  position: absolute;
+  background: #3a3e46;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  height: 100vh;
+  width: 30vw;
+  left: -20px;
+  z-index: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  opacity: 0;
+  padding: 40px 20px 20px;
+  text-align: left;
+  top: 50px;
+}
+
+header .wrap .burger .nav.active {
+  opacity: 1;
+}
+
+header .wrap .burger .nav li {
+  font-size: 25px;
+  color: #fff;
+  padding: 0 0 20px;
+}
+
+header .wrap .burger .line img {
+  z-index: 3;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+header .wrap .burger .line img.active {
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+}
+
+header .wrap .burger .ball img {
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+header .wrap .burger .ball img.active {
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+          transform: translateY(-50%) rotate(-90deg);
+  opacity: 1;
+}
+
+header .wrap .logo {
+  width: 30px;
+}
+
+header .wrap .back {
+  width: 40px;
+}
+
+main {
+  background: #fff;
+  height: 100vh;
+}
+/*# sourceMappingURL=index.css.map */
