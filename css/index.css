@@ -121,7 +121,7 @@ header .wrap .back {
   background: #3a3e46;
   border-top: 1px solid #000;
   border-right: 1px solid #000;
-  height: 100vh;
+  height: 100%;
   width: 50%;
   left: 0px;
   z-index: -2;
@@ -196,7 +196,7 @@ main .swiper {
 }
 
 main .swiper-slide {
-  height: 400px;
+  height: 370px;
   overflow: hidden;
 }
 
