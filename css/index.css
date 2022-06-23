@@ -276,7 +276,7 @@ main .sec1 {
 }
 
 main .sec1 .con2, main .sec1 .con3, main .sec1 .con4 {
-  border-top: 1px solid #909090;
+  border-top: 1px solid #000;
   padding-top: 25px;
 }
 
