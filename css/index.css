@@ -5,7 +5,6 @@ body {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  height: 150vh;
 }
 
 * {
@@ -245,6 +244,11 @@ main .swiper-slide {
 main .swiper-slide img {
   display: block;
   width: 100%;
+}
+
+main .contact {
+  height: 200px;
+  background: #3a3e46;
 }
 
 footer {
