@@ -5,8 +5,7 @@
 <style type="text/css">
 	.st0{display:none;}
 	.st1{display:inline;fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
-	.st2{fill:#EA5514;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
-	.st3{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#000000;stroke-width:1.5;stroke-miterlimit:10;}
 </style>
 <g id="레이어_1_00000087411132183941988730000006939468321129920912_" class="st0">
 	<path class="st1" d="M11.5,14c3.2,4.3,9.5,7.2,16.7,7.2c7,0,13.2-2.8,16.4-6.9"/>
@@ -23,10 +22,10 @@
 	<polyline class="st1" points="20.5,10.9 15.3,17.4 6.4,28.3 15.3,39.3 20.5,45.8 	"/>
 </g>
 <g id="레이어_1_00000060724134272070981980000008378072589100221578_">
-	<path class="st3" d="M43.3,11.9c-4.3,3.2-7.2,9.5-7.2,16.7c0,7,2.8,13.2,6.9,16.4"/>
-	<path class="st3" d="M14.8,45.1c4.2-3.2,7-9.4,7-16.5c0-7.3-3-13.6-7.3-16.8"/>
+	<path class="st2" d="M43.3,11.9c-4.3,3.2-7.2,9.5-7.2,16.7c0,7,2.8,13.2,6.9,16.4"/>
+	<path class="st2" d="M14.8,45.1c4.2-3.2,7-9.4,7-16.5c0-7.3-3-13.6-7.3-16.8"/>
 </g>
 <g id="레이어_3_00000113319827940168060520000017425515174386957992_">
-	<line class="st3" x1="28.8" y1="50.3" x2="28.8" y2="6.6"/>
+	<line class="st2" x1="28.8" y1="50.3" x2="28.8" y2="6.6"/>
 </g>
 </svg>
