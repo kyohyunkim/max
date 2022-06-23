@@ -80,11 +80,8 @@ header{
     #nav_text{
         top:30px;
         position:fixed;top:110px;transition:.5s;height: calc(100% - 150px);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         &.active{transform: translateY(-50px);}
-        .insta{width:20px;}
+        .insta{width:20px;padding-top: 20px;}
         .email{font-size: 10px;color: #909090;padding-top:10px;}
     }
     li{font-size: 15px;color:#fff;padding:0 0 20px;;text-transform: uppercase;}
