@@ -64,11 +64,11 @@ window.addEventListener("scroll", () => {
 
     var beforePosition = 0;
     var afterPosition = document.documentElement.scrollTop;
-    if (afterPosition > 132) {
+    if (afterPosition > 0) {
         if(beforePosition < afterPosition ){
             header.classList.add('active');
         }
-    } if(afterPosition < 132){
+    } if(afterPosition < 50){
         header.classList.remove('active');
     }
     beforePosition = afterPosition;
