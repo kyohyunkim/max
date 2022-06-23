@@ -33,16 +33,17 @@ close_btn.addEventListener('click',function(){
 
 
 
-// ----------aside---------------------------------
+
 let pos = {y:0, y2:0, state:''}
 const elAside = document.querySelector(".top_btn a");
 window.addEventListener("scroll", () => {
+    // ----------aside---------------------------------
     if(0 < window.scrollY){
         elAside.classList.add("active");
     }else{
         elAside.classList.remove("active");
     }
-
+    
     let yy =  this.scrollY;
     pos.y = window.scrollY;
     if(pos.y > pos.y2){
@@ -59,14 +60,20 @@ window.addEventListener("scroll", () => {
     }
     aside_img.style.transform = `rotate(${-yy}deg)`;
     aside_img.style.transform = `rotate(${yy}deg)`;
+    // ----------aside---------------------------------
+
+    var beforePosition = 0;
+    var afterPosition = document.documentElement.scrollTop;
+    if (afterPosition > 132) {
+        if(beforePosition < afterPosition ){
+            header.classList.add('active');
+        }
+    } if(afterPosition < 132){
+        header.classList.remove('active');
+    }
+    beforePosition = afterPosition;
 });
 
-
-    
-    window.addEventListener('scroll',function(){
-
-        
-    })
 
 
 
