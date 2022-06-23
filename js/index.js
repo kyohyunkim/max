@@ -4,7 +4,7 @@ var swiper = new Swiper(".mySwiper", {
     autoplay: {
         delay: 2500,
         disableOnInteraction: false,
-      },
+    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
@@ -22,9 +22,11 @@ line.addEventListener('click',function(){
     line.classList.toggle('active');
     ball.classList.toggle('active');
     nav.classList.toggle('active');
+    close_btn.classList.toggle('active');
 });
-main.addEventListener('click',function(){
+close_btn.addEventListener('click',function(){
     line.classList.remove('active');
     ball.classList.remove('active');
     nav.classList.remove('active');
+    close_btn.classList.remove('active');
 })

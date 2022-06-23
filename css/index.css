@@ -125,8 +125,6 @@ header .wrap .back {
   width: 50%;
   left: 0px;
   z-index: -2;
-  -webkit-transition: .5s;
-  transition: .5s;
   opacity: 0;
   padding: 60px 20px 20px;
   text-align: left;
@@ -143,6 +141,23 @@ header .wrap .back {
   color: #fff;
   padding: 0 0 20px;
   text-transform: uppercase;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100vh;
+  -webkit-backdrop-filter: blur(60px);
+          backdrop-filter: blur(60px);
+  display: none;
+}
+
+.close.active {
+  display: block;
 }
 
 .fix_menu {
@@ -182,21 +197,8 @@ main .swiper {
 }
 
 main .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  background-position: center top;
-}
-
-main .img1 {
-  background-image: url("https://kyohyunkim.github.io/max//img/1.jpeg");
-}
-
-main .img2 {
-  background-image: url("https://kyohyunkim.github.io/max//img/2.jpeg");
-}
-
-main .img3 {
-  background-image: url("https://kyohyunkim.github.io/max//img/3.jpeg");
+  height: 400px;
+  overflow: hidden;
 }
 
 main .swiper-slide img {
