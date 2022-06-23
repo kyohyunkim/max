@@ -75,10 +75,17 @@ header{
     z-index:-2;
     opacity: 0; padding:60px 20px 20px;
     text-align:left;top:50px;
+    
     &.active{opacity: 1;z-index:9}
-    ul{
-        position:fixed;top:110px;transition:.5s;
+    #nav_text{
+        top:30px;
+        position:fixed;top:110px;transition:.5s;height: calc(100% - 150px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         &.active{transform: translateY(-50px);}
+        .insta{width:20px;}
+        .email{font-size: 10px;color: #909090;padding-top:10px;}
     }
     li{font-size: 15px;color:#fff;padding:0 0 20px;;text-transform: uppercase;}
 }
@@ -108,7 +115,7 @@ main{
     }
 
     .swiper-slide {
-        height:370px;
+        height:350px;
         overflow: hidden;
     }
 
