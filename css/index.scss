@@ -76,6 +76,10 @@ header{
     opacity: 0; padding:60px 20px 20px;
     text-align:left;top:50px;
     &.active{opacity: 1;z-index:9}
+    ul{
+        position:fixed;top:110px;transition:.5s;
+        &.active{transform: translateY(-50px);}
+    }
     li{font-size: 15px;color:#fff;padding:0 0 20px;;text-transform: uppercase;}
 }
 .close{
@@ -92,7 +96,7 @@ header{
     align-items: center; border-bottom: 2px solid #f1c726;
     padding:0 20px;background:#3a3e46;
     height: 30px;line-height:30px;border-top:2px solid #f1c726;
-    li{color: #fff;text-align:center;text-transform: uppercase;font-size: 15px;font-weight: 300;}
+    li{color: #fff;text-align:center;text-transform: uppercase;font-size: 12px;font-weight: 300;}
 }
 
 main{

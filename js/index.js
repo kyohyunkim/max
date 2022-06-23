@@ -67,9 +67,11 @@ window.addEventListener("scroll", () => {
     if (afterPosition > 0) {
         if(beforePosition < afterPosition ){
             header.classList.add('active');
+            nav_text.classList.add('active');
         }
     } if(afterPosition < 50){
         header.classList.remove('active');
+        nav_text.classList.remove('active');
     }
     beforePosition = afterPosition;
 });

@@ -175,6 +175,18 @@ header .wrap .back {
   z-index: 9;
 }
 
+.nav ul {
+  position: fixed;
+  top: 110px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.nav ul.active {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
 .nav li {
   font-size: 15px;
   color: #fff;
@@ -220,7 +232,7 @@ header .wrap .back {
   color: #fff;
   text-align: center;
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 300;
 }
 
