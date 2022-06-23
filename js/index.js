@@ -30,3 +30,43 @@ close_btn.addEventListener('click',function(){
     nav.classList.remove('active');
     close_btn.classList.remove('active');
 })
+
+
+
+// ----------aside---------------------------------
+let pos = {y:0, y2:0, state:''}
+const elAside = document.querySelector(".top_btn a");
+window.addEventListener("scroll", () => {
+    if(0 < window.scrollY){
+        elAside.classList.add("active");
+    }else{
+        elAside.classList.remove("active");
+    }
+
+    let yy =  this.scrollY;
+    pos.y = window.scrollY;
+    if(pos.y > pos.y2){
+        pos.state = true;                
+    }else{
+        pos.state = false;
+    }
+    pos.y2 = pos.y;
+
+    if(pos.state){
+        yy = yy;
+    }else{
+        yy = yy;
+    }
+    aside_img.style.transform = `rotate(${-yy}deg)`;
+    aside_img.style.transform = `rotate(${yy}deg)`;
+});
+
+
+    
+    window.addEventListener('scroll',function(){
+
+        
+    })
+
+
+

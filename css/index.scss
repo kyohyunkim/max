@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap');
-body{max-width:475px;width:100%;margin:0 auto;text-align: center;position:relative;}
+body{max-width:475px;width:100%;margin:0 auto;text-align: center;position:relative;height: 150vh;}
 *{
     margin:0;padding:0;text-decoration: none;list-style: none;
     font-family: 'Montserrat','Noto Sans KR', sans-serif;
@@ -8,6 +8,20 @@ body{max-width:475px;width:100%;margin:0 auto;text-align: center;position:relati
 .en{font-family: 'Montserrat', sans-serif!important;}
 
 img{width:100%;}
+html {
+    scroll-behavior: smooth;
+}
+.top_btn{position: relative; max-width: 475px;margin:0 auto;}
+.top_btn a{
+    transition:1s;
+    z-index:999;
+    position:fixed; bottom:70px; right:20px;
+    width:40px; height:40px;
+    opacity:0;
+}
+.top_btn .aside_arrow{width:20px;}
+.top_btn a.active{opacity:1;}
+
 .body_wrap{overflow:hidden ;position: relative;z-index: 99;}
 header{
     z-index: 999;
