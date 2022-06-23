@@ -272,7 +272,12 @@ main .swiper-slide img {
 
 main .sec1 {
   background: #3a3e46;
-  padding: 40px 20px;
+  padding: 60px 20px;
+}
+
+main .sec1 .con2, main .sec1 .con3, main .sec1 .con4 {
+  border-top: 1px solid #909090;
+  padding-top: 25px;
 }
 
 main .sec1 .title {
@@ -284,6 +289,13 @@ main .sec1 .title {
   border-radius: 10px;
   font-size: 13px;
   color: #fff;
+}
+
+main .sec1 .details {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  padding: 25px 0 20px;
 }
 
 main .sec1 .detail {

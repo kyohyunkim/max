@@ -123,13 +123,15 @@ main{
 
     .sec1{
         background:#3a3e46;
-        padding:40px 20px;
+        padding:60px 20px;
+        .con2,.con3,.con4{border-top: 1px solid #909090;padding-top: 25px;}
         .title{
             margin:0 auto;
             border:1px solid rgba(255,255,255,0.5);
             width:120px;height: 25px;line-height: 25px;
             border-radius: 10px;font-size:13px;color:#fff;
         }
+        .details{text-align: center;color: #fff;font-size: 13px;padding:25px 0 20px;}
         .detail{
             width:100%;
             text-align: center;
