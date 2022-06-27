@@ -1,4 +1,5 @@
 var swiper = new Swiper(".mySwiper", {
+    speed: 1200,
     spaceBetween: 50,
     effect: "fade",
     autoplay: {
