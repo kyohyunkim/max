@@ -271,18 +271,18 @@ main .swiper-slide img {
 }
 
 main .sec1 {
-  background: #3a3e46;
+  background: #fff;
   padding: 30px 0px;
 }
 
 main .sec1 .con2, main .sec1 .con3, main .sec1 .con4 {
-  border-top: 1px solid #000;
+  border-top: 1px solid #3a3e46;
   padding-top: 25px;
 }
 
 main .sec1 .title span {
   margin: 0 auto;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: #3a3e46;
   width: 100%;
   border-radius: 10px;
   font-size: 13px;
@@ -292,7 +292,7 @@ main .sec1 .title span {
 
 main .sec1 .details {
   text-align: center;
-  color: #fff;
+  color: #3a3e46;
   font-size: 13px;
   padding: 25px 0 25px;
 }
@@ -321,7 +321,7 @@ main .sec1 .detail li:nth-of-type(1) {
           align-items: center;
   padding-left: 20px;
   font-size: 15px;
-  color: #fff;
+  color: #3a3e46;
 }
 
 main .sec1 .detail li:nth-of-type(1) span {
@@ -332,19 +332,19 @@ main .sec1 .detail li:nth-of-type(1) span {
 
 main .sec1 .detail li:nth-of-type(2) {
   width: 10%;
-  color: #fff;
+  color: #3a3e46;
 }
 
 main .sec1 .detail li:nth-of-type(3) {
   padding-right: 20px;
   width: 50%;
   font-size: 12px;
-  color: #fff;
+  color: #3a3e46;
   text-align: left;
 }
 
 footer {
-  background: #000;
+  background: #3a3e46;
   padding: 20px;
   text-align: center;
 }
